@@ -1,0 +1,83 @@
+        body {
+            background-color: rgb(76, 187, 155);
+            font-family: Arial, sans-serif;
+        }
+        .body h1, .body h2 {
+            text-align: center;
+            color: white;
+        }
+        .container {
+            background-color: white;
+            width: 94%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .bordered {
+            border: 1px solid black;
+            padding: 0px;
+            border-radius: 10px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+        }
+        .container h1, .container h2 {
+            text-align: center;
+        }
+        .container img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+        .container input {
+            display: block;
+            width: 80%;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+        .container select {
+            display: block;
+            width: 83%;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+
+        .container button {
+            display: block;
+            width: 25%;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            background-color: rgb(76, 187, 155);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        
+        
+    
+        

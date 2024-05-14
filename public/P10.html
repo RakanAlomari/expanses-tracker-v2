@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Tracker</title>
+    <link rel="stylesheet" href="P10.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <nav>
+                    <a href="p3.html">Dashboard</a>
+                    <a href="p4.html">Goals</a>
+                    <a href="p9.html">Credits</a>
+                    <a href="p10.html">Installments</a>
+                    <a href="p11.html">Monthly Bills</a>
+                  </nav>
+            <h1>Installments Tracker</h1>
+        </div>
+        <form id="expensesForm" class="expenses-form">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            
+            <label for="amount">Installment Amount</label>
+            <input type="number" id="amount" placeholder="Installment Amount" required>
+            
+            <label for="startDate">Starting Date</label>
+            <input type="date" id="startDate" required>
+            
+            <label for="endDate">Ending Date</label>
+            <input type="date" id="endDate" required>
+            
+            <label for="dueDay">Due Day for Each Month</label>
+            <input type="text" id="dueDay" placeholder="Due Day for Each Month" required>
+            
+            <div class="file-upload-btn">
+                <input type="file" id="fileUpload" hidden>
+                <button type="button" onclick="document.getElementById('fileUpload').click()">Upload File</button>
+            </div>
+            
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+    </div>
+    <script src="P10.js"></script>
+</body>
+</html>

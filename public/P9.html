@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Tracker</title>
+    <link rel="stylesheet" href="P9.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="p3.html">Dashboard</a>
+            <a href="p4.html">Goals</a>
+            <a href="p9.html">Credits</a>
+            <a href="p10.html">Installments</a>
+            <a href="p11.html">Monthly Bills</a>
+          </nav>
+    <div class="content">
+        <div class="form-container">
+            <form id="expenseForm">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Amount" required>
+                
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="dueDate" required>
+                
+                <input type="file" id="fileUpload" hidden>
+                <button type="button" class="upload-button" onclick="document.getElementById('fileUpload').click()">Upload File</button>
+                
+                <button type="submit" class="add-button" onclick="addExpense()">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="P9.js"></script>
+</body>
+</html>

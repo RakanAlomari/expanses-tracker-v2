@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="p5.css">
+  <script src="p5.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Expenses Tracker</h1>
+    </header>
+    <div class="login">
+    <H1>Institution Login</h1>
+  <div class="login-container">
+    <form action="/Login_ins" method="post">
+      <div class="icon"></div>
+
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Institution ID" name="username" required>
+      </div><br>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" name="password" required>
+        <input type="checkbox" id="show-password">
+      </div>
+      <div class="error-message" id="error-message"></div>
+
+      <div class="buttons">
+        <button type="submit" id="logins" >Login</button>
+    </form>
+    
+      <button type="submit" id="Create">Institution Create Account</button><br>
+
+  <button type="submit" id="Individuals">Individuals</button>
+  </div>
+  </div>
+  </div>
+
+
+</body>
+</html>

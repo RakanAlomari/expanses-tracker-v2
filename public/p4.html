@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Goals</title>
+   <link rel="stylesheet" href="p4.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="title">Expenses Tracker</div>
+      <h2>Goals</h2>
+      <a href="p6.html"><img src="account.svg" alt="account"></a>
+    </header>
+    <nav>
+      <a href="p3.html">Dashboard</a>
+      <a href="p4.html">Goals</a>
+      <a href="p9.html">Credits</a>
+      <a href="p10.html">Installments</a>
+      <a href="p11.html">Monthly Bills</a>
+    </nav>
+    <section id="content4">
+      <div class="goal-card">
+        <img src="Car front view icon.webp" alt="Car" class="goal-icon">
+        <div class="goal-details">
+          <p class="goal-title">Buying Toyota Camry</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 33%;"></div>
+          </div>
+          <p class="goal-progress">33% 110,000 SAR</p>
+        </div>
+        <button class="add-goal"><img src="add2.svg" alt="Add"></button>
+      </div>
+      <div class="goal-card">
+        <img src="home-icon-transparent-free-png.webp" alt="House" class="goal-icon">
+        <div class="goal-details">
+          <p class="goal-title">Buying a House</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+          <p class="goal-progress">60% 1,200,000 SAR</p>
+        </div>
+        <button class="add-goal"><img src="add2.svg" alt="Add"></button>
+      </div>
+      <div class="addList2">
+        <button id="add2"><img src="add2.svg" alt="Add"></button>
+      </div>
+    </section>
+    <footer>
+      <div class="rights">© 2024 Expenses Tracker - All rights reserved.</div>
+    </footer>
+  </main>
+  <div class="popup" id="popup3">
+    <div class="popup-content">
+      <span class="close" id="close3">&times;</span>
+      <p>Type: </p>
+      <p>
+        <input type="radio" name="type2" value="House" id="house">
+        <label for="house">House</label>
+      </p>
+      <p>
+        <input type="radio" name="type2" value="Car" id="car">
+        <label for="car">Car</label>
+      </p>
+      <p>
+        <input type="radio" name="type2" value="Laptop" id="laptop">
+        <label for="laptop">Laptop</label>
+      </p>
+      <p>
+        <label for="price2">Price: </label>
+        <input type="text" name="price2" id="price2">
+      </p>
+      <button type="button" id="processe3">OK</button>
+    </div>
+  </div>
+  <script src="p4.js"></script>
+</body>
+</html>

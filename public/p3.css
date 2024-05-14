@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #5dbb9f;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+header .title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header a img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+nav {
+  background-color: #72d6b6;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+section#home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#home .summary {
+  flex: 1;
+}
+
+section#home .calendar {
+  flex: 1;
+  text-align: center;
+}
+
+section#home .calendar input[type="date"] {
+  font-size: 1.2em;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+section#home .calendar .selected-date {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+section#home .piechart {
+  flex: 1;
+}
+
+section#home .piechart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+section#home .piechart th,
+section#home .piechart td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+section#home .piechart th {
+  background-color: #72d6b6;
+  color: white;
+}
+
+section#widgets {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #72d6b6;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#widgets .card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 150px;
+}
+
+section#widgets .card img {
+  width: 50px;
+  height: 50px;
+}
+
+section#widgets .card p {
+  margin: 10px 0;
+}
+
+section#widgets .edit {
+  background-color: #5dbb9f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section#widgets .addList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+section#widgets .addList button {
+  background-color: #5dbb9f;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #5dbb9f;
+  color: white;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+  background-color: #5dbb9f;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#other-text {
+  display: none;
+}

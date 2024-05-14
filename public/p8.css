@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5BC5A6;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container {
+  max-width: 95%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+.rectangle {
+  position: relative;
+  left: -20px;
+  width: 109%;
+  height: 12px;
+  background-color: #5BC5A6; 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+.title::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #5BC5A6;
+  position: relative;
+  left: 89%;
+  top: 4px;
+}
+.title{
+  font-weight: bold;
+}
+.account{
+  position: relative;
+  top: -910px;
+  left: -50px;
+
+}
+.line{
+  position: relative;
+  top: -22px;
+  left: 100px;
+  width: 85%;
+  height: 7px;
+  background-color: #5BC5A6; 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  border: 1px solid;
+
+}
+#user{
+  width: 200px;
+  position: relative;
+  left: -30px;
+}
+#cam{
+  width: 50px;
+  position: relative;
+  left: -100px;
+  top: 0px;
+}
+
+
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+  left: 200px;
+  top: -220px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  position: relative;
+  top: -250px;
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5BC5A6;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #096e50;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.Settings{
+  position: relative;
+  top: -200px;
+}
+.s{
+  display: inline;
+  position: relative;
+  left: 150px;
+}
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.language label {
+  margin-right: 35px;
+}
+
+.appearance {
+  display: flex;
+  align-items: center;
+}
+
+.appearance label {
+  margin-right: 20px;
+}

@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5BC5A6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  body h2{
+    color: white;
+    font-size: 40px;
+    
+  }
+  .login {
+    background-color: white;
+    width: 98%;
+    padding: 0px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 82vh;
+  }
+  .login h1{
+    position:relative;
+    top: -36px;
+    font-size: 50px;
+  }
+  form {
+    position: relative;
+    top: -80px;
+    border: 1px solid black;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    
+}
+#show-password{
+    position: relative;
+    left: 300px;
+    top: -30px;
+}
+#username{
+    width:200%;
+    position: relative;
+    left: -76px;
+    background-color: #ECECEC;
+    height: 4vh;
+    border: 1px solid #151010;;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#password{
+    width:200%;
+    position: relative;
+    left: -76px;
+    background-color: #ECECEC;
+    height: 4vh;
+    border: 1px solid #151010;;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.buttons{
+    position: relative;
+    top: 100px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.buttons [type="submit"]{
+    width: 250px;
+    height: 4vh;
+    background-color: #5BC5A6;
+    border: 1px solid #225445 ;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+#Create{
+    background-color: #666666;
+}
+#Individuals{
+    width: 350px;
+}
+.icon {
+  background: url('User Profile Circle Abstract.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}

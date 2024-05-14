@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Dashboard</title>
+   <link rel="stylesheet" href="p3.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="title">Expenses Tracker</div>
+      <h2>Dashboard</h2>
+      <a href="p6.html"><img src="account.svg" alt="account"></a>
+    </header>
+    <nav>
+      <a href="p3.html">Dashboard</a>
+      <a href="p4.html">Goals</a>
+      <a href="p9.html">Credits</a>
+      <a href="p10.html">Installments</a>
+      <a href="p11.html">Monthly Bills</a>
+    </nav>
+    <section id="home">
+      <div class="summary">
+        <p>Total Balance: <span id="balance">150,000</span> SAR</p>
+        <p>Monthly Income: <span id="income">10,000</span> SAR</p>
+        <p>The Budget: <span id="budget">8,000</span> SAR</p>
+        <p>Expenses: <span id="expenses">5,783.73</span> SAR</p>
+        <button type="button" id="edit-summary">Edit</button>
+      </div>
+      <div class="calendar">
+        <input type="date" id="calendar-input">
+        <div class="selected-date" id="selected-date">February 2024</div>
+      </div>
+      <div class="piechart">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Amount</th></tr>
+          </thead>
+          <tbody id="expenses-table">
+            <tr><td>Gas</td><td>500</td></tr>
+            <tr><td>Car</td><td>600</td></tr>
+            <tr><td>Shopping</td><td>956.48</td></tr>
+            <tr><td>Food</td><td>150</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="widgets">
+      <div class="card" data-id="1">
+        <img src="food.svg" alt="food">
+        <p class="amount">500 SAR</p>
+        <button type="button" class="edit">Edit</button>
+      </div>
+      <div class="card" data-id="2">
+        <img src="car.svg" alt="car">
+        <p class="amount">600 SAR</p>
+        <button type="button" class="edit">Edit</button>
+      </div>
+      <div class="card" data-id="3">
+        <img src="water.svg" alt="water">
+        <p class="amount">956.48 SAR</p>
+        <p>Due 25th</p>
+        <button type="button" class="edit">Edit</button>
+      </div>
+      <div class="card" data-id="4">
+        <img src="person.svg" alt="person">
+        <p class="amount">150 SAR</p>
+        <p>Due 15th</p>
+        <button type="button" class="edit">Edit</button>
+      </div>
+      <div class="addList">
+        <button type="button" id="add1"><img src="add1.svg" alt="add"></button>
+      </div>
+    </section>
+    <footer>
+      <div class="rights">© 2024 Expenses Tracker - All rights reserved.</div>
+    </footer>
+  </main>
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <span class="close" id="close2">&times;</span>
+      <p>Type: </p>
+      <p>
+        <input type="radio" name="type" value="Gasoline" id="gas">
+        <label for="gas">Gasoline</label>
+      </p>
+      <p>
+        <input type="radio" name="type" value="Shopping" id="shopping">
+        <label for="shopping">Shopping</label>
+      </p>
+      <p>
+        <input type="radio" name="type" value="Other" id="other">
+        <label for="other">Other</label>
+        <input type="text" id="other-text" name="other-text" placeholder="Enter category" style="display:none;">
+      </p>
+      <p>
+        <label for="price">Price: </label>
+        <input type="text" name="price" id="price">
+      </p>
+      <button type="button" id="processe2">OK</button>
+    </div>
+  </div>
+  <div class="popup" id="editPopup">
+    <div class="popup-content">
+      <span class="close" id="editClose">&times;</span>
+      <p>
+        <label for="editPrice">Price: </label>
+        <input type="text" name="editPrice" id="editPrice">
+      </p>
+      <button type="button" id="saveEdit">Save</button>
+    </div>
+  </div>
+  <script src="p3.js"></script>
+</body>
+</html>
